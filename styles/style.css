@@ -1,47 +1,47 @@
 :root {
+  --color-purple-600: hsl(246, 80%, 60%);
+  --color-orange-300: hsl(15, 100%, 70%);
+  --color-blue-300: hsl(195, 74%, 62%);
+  --color-pink-400: hsl(348, 100%, 68%);
+  --color-green-400: hsl(145, 58%, 55%);
+  --color-purple-700: hsl(264, 64%, 52%);
+  --color-yellow-300: hsl(43, 84%, 65%);
 
-    --color-purple-600: hsl(246, 80%, 60%);
-    --color-orange-300: hsl(15, 100%, 70%);
-    --color-blue-300: hsl(195, 74%, 62%);
-    --color-pink-400: hsl(348, 100%, 68%);
-    --color-green-400: hsl(145, 58%, 55%);
-    --color-purple-700: hsl(264, 64%, 52%);
-    --color-yellow-300: hsl(43, 84%, 65%);
+  --color-dark-blue: hsl(226, 43%, 10%);
+  --color-desaturated-blue: hsl(235, 46%, 20%);
+  --color-dark-grayish-blue: hsl(235, 45%, 61%);
+  --color-pale-blue: hsl(236, 100%, 87%);
+  --color-white: hsl(0, 0%, 100%);
 
-    --color-dark-blue: hsl(226, 43%, 10%);
-    --color-desaturated-blue: hsl(235, 46%, 20%);
-    --color-dark-grayish-blue: hsl(235, 45%, 61%);
-    --color-pale-blue: hsl(236, 100%, 87%);
-    --color-white: hsl(0, 0%, 100%);
+  --font-family: "Rubik", sans-serif;
+  --font-weight-300: 300;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
 
-    --font-family: 'Rubik', sans-serif;
-    --font-weight-300: 300;
-    --font-weight-400: 400;
-    --font-weight-500: 500;
+  --font-size-15: 0.9375rem; /* 15px */
+  --font-size-18: 1.125rem; /* 18px */
+  --font-size-24: 1.5rem; /* 24px */
+  --font-size-32: 2rem; /* 32px */
+  --font-size-40: 2.5rem; /* 40px */
+  --font-size-56: 3.5rem; /* 56px */
 
-    --font-size-15: 0.9375rem; /* 15px */
-    --font-size-18: 1.125rem; /* 18px */
-    --font-size-24: 1.5rem; /* 24px */
-    --font-size-32: 2rem; /* 32px */
-    --font-size-40: 2.5rem; /* 40px */
-    --font-size-56: 3.5rem; /* 56px */
+  --line-height-1-1-7: 1.17;
+  --line-height-1-2: 1.2;
+  --line-height-1-6: 1.6;
+  --line-height-1-8: 1.8;
 
-    --line-height-1-1-7: 1.17;
-    --line-height-1-2: 1.2;
-    --line-height-1-6: 1.6;
-    --line-height-1-8: 1.8;
-
-    --spacing-0: 0;
-    --spacing-8: 0.5rem; /* 8px */
-    --spacing-16: 1rem; /* 16px */
-    --spacing-24: 1.5rem; /* 24px */
-    --spacing-32: 2rem; /* 32px */
-    --spacing-40: 2.5rem; /* 40px */
-
+  --spacing-0: 0;
+  --spacing-8: 0.5rem; /* 8px */
+  --spacing-16: 1rem; /* 16px */
+  --spacing-24: 1.5rem; /* 24px */
+  --spacing-32: 2rem; /* 32px */
+  --spacing-40: 2.5rem; /* 40px */
 }
 
 /* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -58,11 +58,11 @@
 }
 
 body {
-    /* global styles */
-    background-color: var(--color-dark-blue);
-    color: var(--color-white);
-    font-family: var(--font-family);
-    font-size: var(--font-size-18);
+  /* global styles */
+  background-color: var(--color-dark-blue);
+  color: var(--color-white);
+  font-family: var(--font-family);
+  font-size: var(--font-size-18);
   /* 4. Add accessible line-height */
   line-height: var(--line-height-1-2);
   /* 5. Improve text rendering */
@@ -70,18 +70,31 @@ body {
 }
 
 /* 6. Improve media defaults */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
 /* 7. Inherit fonts for form controls */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
 /* 8. Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
@@ -89,13 +102,44 @@ p, h1, h2, h3, h4, h5, h6 {
 p {
   text-wrap: pretty;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }
 
 /*
   10. Create a root stacking context
 */
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
+}
+
+main {
+  display: grid;
+  place-content: center;
+}
+
+.card {
+  display: grid;
+}
+
+@media (min-width: 50rem) {
+  .card {
+    grid-template-columns: 30% auto;
+  }
+}
+
+.time-tracking {
+  display: grid;
+}
+
+@media (min-width: 48rem) {
+  .time-tracking {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
