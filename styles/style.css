@@ -144,3 +144,67 @@ main {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* utilities */
+
+.grid-container {
+  display: grid;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.border-radius-16 {
+  border-radius: var(--spacing-16);
+}
+
+.padding-32 {
+  padding: var(--spacing-32);
+}
+
+.bg-purple-600 {
+  background-color: var(--color-purple-600);
+}
+
+.bg-desaturated-blue {
+  background-color: var(--color-desaturated-blue);
+}
+
+.bg-orange-300 {
+  background-color: var(--color-orange-300);
+}
+
+.bg-blue-300 {
+  background-color: var(--color-blue-300);
+}
+
+.bg-pink-400 {
+  background-color: var(--color-pink-400);
+}
+
+.bg-green-400 {
+  background-color: var(--color-green-400);
+}
+
+.bg-purple-700 {
+  background-color: var(--color-purple-700);
+}
+
+.bg-yellow-300 {
+  background-color: var(--color-yellow-300);
+}
+
+.grid-gap {
+  gap: var(--spacing-24);
+}
+
+@media (min-width: 50rem) {
+  .grid-gap {
+    gap: var(--spacing-32);
+  }
+}
