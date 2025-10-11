@@ -58,8 +58,13 @@
 }
 
 body {
+    /* global styles */
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+    font-family: var(--font-family);
+    font-size: var(--font-size-18);
   /* 4. Add accessible line-height */
-  line-height: 1.5;
+  line-height: var(--line-height-1-2);
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
 }
