@@ -121,22 +121,14 @@ h6 {
 /* composition */
 
 main {
-  display: grid;
   place-content: center;
-}
-
-.card {
-  display: grid;
+  min-block-size: 100vh;
 }
 
 @media (min-width: 50rem) {
   .card {
     grid-template-columns: 30% auto;
   }
-}
-
-.time-tracking {
-  display: grid;
 }
 
 @media (min-width: 48rem) {
@@ -159,12 +151,60 @@ main {
   justify-content: space-between;
 }
 
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
 .border-radius-16 {
   border-radius: var(--spacing-16);
 }
 
 .padding-32 {
   padding: var(--spacing-32);
+}
+
+.padding-32-block-end {
+  padding-block-end: var(--spacing-32);
+}
+
+.padding-32-block-start {
+  padding-block-start: var(--spacing-32);
+}
+
+.padding-32-inline-end {
+  padding-inline-end: var(--spacing-32);
+}
+
+.padding-32-inline-start {
+  padding-inline-start: var(--spacing-32);
+}
+
+.padding-0 {
+  padding: var(--spacing-0);
+}
+
+.padding-0-block-end {
+  padding-block-end: var(--spacing-0);
+}
+
+.padding-0-block-start {
+  padding-block-start: 0;
+}
+
+.padding-0-inline-end {
+  padding-inline-end: 0;
+}
+
+.padding-0-inline-start {
+  padding-inline-start: 0;
+}
+
+.margin-inline-auto {
+  margin-inline: auto;
 }
 
 .bg-purple-600 {
