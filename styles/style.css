@@ -125,7 +125,7 @@ main {
   min-block-size: 100vh;
 }
 
-@media (min-width: 50rem) {
+@media (min-width: 58rem) {
   .card {
     grid-template-columns: 30% auto;
   }
@@ -247,7 +247,7 @@ main {
   gap: var(--spacing-24);
 }
 
-@media (min-width: 50rem) {
+@media (min-width: 58rem) {
   .grid-gap {
     gap: var(--spacing-32);
   }
@@ -260,7 +260,36 @@ main {
 }
 
 .activity_card__info {
+  padding: var(--spacing-24);
   position: relative;
   top: -10px;
   z-index: 1;
+}
+
+@media (min-width: 58rem) {
+  .activity_card__info {
+    padding: var(--spacing-32);
+  }
+}
+
+.activity_card__header img {
+  block-size: 3rem;
+  inline-size: 3rem;
+}
+
+.activity_card__info--header h4 {
+  font-size: var(--font-size-18);
+  line-height: var(--line-height-1-6);
+}
+
+.current-hours {
+  font-size: var(--font-size-40);
+  font-weight: var(--font-weight-300);
+  line-height: var(--line-height-1-1-7);
+}
+
+.previous-hours {
+  color: var(--color-dark-grayish-blue);
+  font-size: var(--font-size-15);
+  line-height: var(--line-height-1-2);
 }
