@@ -259,6 +259,7 @@ main {
 
 /* block elements */
 .activity_card {
+  cursor: pointer;
   overflow: hidden;
 }
 
@@ -266,6 +267,10 @@ main {
   padding: var(--spacing-24);
   top: -10px;
   z-index: 1;
+}
+
+.activity_card__info:hover {
+  background-color: var(--color-dark-blue);
 }
 
 @media (min-width: 58rem) {
@@ -389,6 +394,9 @@ main {
   text-decoration: none;
 }
 
+.timeframe-link:hover {
+  color: var(--color-pale-blue);
+}
 /* exception elements */
 
 .timeframe-link[data-state="active"] {
