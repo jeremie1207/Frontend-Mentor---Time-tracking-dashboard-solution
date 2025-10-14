@@ -253,15 +253,17 @@ main {
   }
 }
 
+.position-relative {
+  position: relative;
+}
+
 /* block elements */
 .activity_card {
-  position: relative;
   overflow: hidden;
 }
 
 .activity_card__info {
   padding: var(--spacing-24);
-  position: relative;
   top: -10px;
   z-index: 1;
 }
@@ -316,7 +318,6 @@ main {
 }
 
 .profile-info {
-  position: relative;
   z-index: 1;
   top: 4px;
   gap: var(--spacing-24);
@@ -356,7 +357,6 @@ main {
   padding-block: var(--spacing-24);
   border-end-end-radius: var(--spacing-16);
   border-end-start-radius: var(--spacing-16);
-  position: relative;
 }
 
 @media (min-width: 58rem) {
@@ -374,7 +374,6 @@ main {
   margin: 0;
   list-style-type: none;
   gap: var(--spacing-32);
-  position: relative;
 }
 
 @media (min-width: 58rem) {
