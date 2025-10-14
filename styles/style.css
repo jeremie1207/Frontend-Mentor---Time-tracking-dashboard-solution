@@ -316,7 +316,10 @@ main {
 }
 
 .profile-info {
-  gap:var(--spacing-24);
+  position: relative;
+  z-index: 1;
+  top: 4px;
+  gap: var(--spacing-24);
 }
 
 @media (min-width: 58rem) {
@@ -343,4 +346,52 @@ main {
   .profile-text h1 {
     font-size: var(--font-size-40);
   }
+}
+
+.profile {
+  overflow: hidden;
+}
+
+.timeframe-selector {
+  padding-block: var(--spacing-24);
+  border-end-end-radius: var(--spacing-16);
+  border-end-start-radius: var(--spacing-16);
+  position: relative;
+}
+
+@media (min-width: 58rem) {
+  .timeframe-selector {
+    padding-inline: var(--spacing-32);
+    padding-block-start: 1.25rem;
+    padding-block-end: var(--spacing-32);
+  }
+}
+
+.timeframe-selector ul {
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  gap: var(--spacing-32);
+  position: relative;
+}
+
+@media (min-width: 58rem) {
+  .timeframe-selector ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-8);
+  }
+}
+
+.timeframe-link {
+  color: var(--color-dark-grayish-blue);
+  text-decoration: none;
+}
+
+/* exception elements */
+
+.timeframe-link[data-state="active"] {
+  color: var(--color-white);
 }
