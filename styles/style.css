@@ -354,6 +354,7 @@ main {
 }
 
 .profile {
+  border-radius: var(--spacing-16);
   overflow: hidden;
 }
 
