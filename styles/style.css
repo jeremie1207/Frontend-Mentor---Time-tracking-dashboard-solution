@@ -324,8 +324,6 @@ main {
 }
 
 .profile-info {
-  z-index: 1;
-  top: 4px;
   gap: var(--spacing-24);
 }
 
