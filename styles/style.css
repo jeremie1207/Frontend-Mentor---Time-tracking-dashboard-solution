@@ -269,9 +269,9 @@ main {
   z-index: 1;
 }
 
-.activity_card__info:hover {
+/* .activity_card__info:hover {
   background-color: var(--color-dark-blue);
-}
+} */
 
 @media (min-width: 58rem) {
   .activity_card__info {
